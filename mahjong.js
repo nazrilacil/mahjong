@@ -75,7 +75,7 @@
         }, 700);
       }
     }
-    let total;
+    let total = 0
     async function spin() {
         win.innerHTML = total - betInput.value
         los.innerHTML = total + betInput.value

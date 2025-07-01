@@ -75,10 +75,10 @@
         }, 700);
       }
     }
-
+    let total = 0
     async function spin() {
-        win.innerHTML = coins + betInput.value
-        los.innerHTML = coins - betInput.value
+        win.innerHTML = coins -= +betInput.value
+        los.innerHTML = total + betInput.value
       if (freeSpins > 0) {
         freeSpins--;
         freeSpinEl.textContent = freeSpins;

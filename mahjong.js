@@ -8,6 +8,8 @@
     const autoSpinBtn = document.getElementById("autoSpinBtn");
     const toggleDark = document.getElementById("toggleDark");
     const freeSpinEl = document.getElementById("freeSpin");
+    const win = document.getElementById("win");
+    const los = document.getElementById("lose");
 
     let coins = 1000;
     let freeSpins = 0;
@@ -75,6 +77,8 @@
     }
 
     async function spin() {
+        win.innerHTML = coins + betInput.value
+        los.innerHTML = coins - betInput.value
       if (freeSpins > 0) {
         freeSpins--;
         freeSpinEl.textContent = freeSpins;

@@ -75,9 +75,9 @@
         }, 700);
       }
     }
-    let total = 0
+    let total;
     async function spin() {
-        win.innerHTML = coins -= +betInput.value
+        win.innerHTML = total - betInput.value
         los.innerHTML = total + betInput.value
       if (freeSpins > 0) {
         freeSpins--;
